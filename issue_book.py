@@ -11,9 +11,9 @@ def issue_book():
 
         books[book_name]["available"] = False
         books[book_name]["issued_to"] = student
-        #books[book_name]["issue_date"] = date.today()  this will use the real time and in real we cant wait for 10 days so,
+        books[book_name]["issue_date"] = date.today()  #this will use the real time and in real we cant wait for 10 days so,
         
-        books[book_name]["issue_date"] = date.today() - timedelta(days=10) # here it is used as "Pretend book was issued 10 days ago"
+        #books[book_name]["issue_date"] = date.today() - timedelta(days=10) # here it is used as "Pretend book was issued 10 days ago"
         
         books[book_name]["days"] = days
 
